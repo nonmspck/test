@@ -1,6 +1,7 @@
 .pageHeader {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-content: center;
     align-items: center;
 
@@ -10,6 +11,24 @@
 
     font: 700 16px/18px "Geometria", "Arial", sans-serif;
     vertical-align: center;
+
+    @media (max-width: 979px) {
+        padding: 40px 100px;
+    }
+
+    @media (max-width: 859px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    @media (max-width: 719px) {
+        flex-direction: column;
+
+        padding: 20px 0 0;
+
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 .pageHeader__logo {
@@ -23,6 +42,40 @@
     width: 270px;
     height: 50px;
     margin-top: -34px;
+
+    @media (max-width: 1279px) {
+        order: 1;
+    }
+
+    @media (max-width: 719px) {
+        height: 92px;
+        margin-top: 0;
+    }
+}
+
+.pageHeader__nav {
+    flex-shrink: 0;
+
+    @media (max-width: 1279px) {
+        order: 3;
+
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 979px) {
+        margin-top: 50px;
+    }
+
+    @media (max-width: 719px) {
+        order: 2;
+
+        width: 100%;
+        margin: 0;
+
+        text-align: center;
+    }
 }
 
 .pageHeader__btn {
@@ -45,17 +98,35 @@
     &:hover {
         opacity: .75;
     }
+
+    @media (max-width: 1279px) {
+        order: 2;
+    }
+
+    @media (max-width: 719px) {
+        order: 3;
+
+        width: 100%;
+        padding: 20px 0;
+
+        text-align: center;
+
+        background-color: transparent;
+        border-radius: 0;
+    }
 }
 
 .pageNav__list {
-    flex-shrink: 0;
-
     display: flex;
     
     margin: 0;
     padding: 0;
 
     list-style: none;
+
+    @media (max-width: 719px) {
+        flex-direction: column;
+    }
 }
 
 .pageNav__item {
@@ -64,20 +135,56 @@
     margin-right: 30px;
 
     cursor: pointer;
-    transition: .3s;
-
-    &:hover {
-        opacity: .6;
-    }
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &-mob {
+        display: none;
+        
+        padding: 20px 0;
+        border: none;
+
+        position: relative;
+                
+        background: transparent;
+        transition: .3s;
+
+        color: #fff;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+
+            width: 24px;
+            height: 24px;
+            
+            position: absolute;
+            top: 16px;
+            right: 50%;
+            transform: translateX(65px);
+
+            background: url("%=static=%minified-svg/lnr-menu.svg");
+        }
+
+        @media (max-width: 719px) {
+            display: block;
+        }
     }
 
     &-popup {
         padding-right: 18px;
 
         position: relative;
+
+        &:hover {
+            @media (min-width: 720px) {
+                .pageNav__popupList {
+                    display: flex;
+                }
+            }
+        }
 
         &::after {
             content: "";
@@ -91,16 +198,98 @@
 
             background: url("%=static=%minified-svg/arrow-down.svg");
             background-size: 11px 18px;
+
+            @media (max-width: 719px) {
+                top: 20px;
+                right: 50%;
+                transform: translateX(70px);
+                z-index: 1;
+            }
         }
+
+        @media (max-width: 719px) {
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 719px) {
+        min-width: 280px;
+        width: 100%;
+        margin: 0;
+
+        /*&:first-child:not(.pageNav__item-mob) {
+            border-top: 1px solid #666;
+        }*/
+
+        /*:not(.pageNav__item-mob)*/
+            border-bottom: 1px solid #666;
     }
 }
 
 .pageNav__link {
+    display: block;
+    width: 100%;
+
     font: inherit;
     text-decoration: none;
     color: #fff;
+
+    transition: .3s;
+
+    &:hover {
+        opacity: .6;
+    }
+
+    @media (max-width: 719px) {
+        padding: 20px 0;
+
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .pageNav__popupList {
     display: none;
+    flex-direction: column;
+
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 0;
+
+    background: rgb(90, 90, 90);
+    border-radius: 4px;
+}
+
+.pageNav__popupItem {
+    list-style: none;
+
+    &:first-child {
+        .pageNav__popupLink {
+            padding-top: 8px;
+        }
+    }
+
+    &:last-child {
+        .pageNav__popupLink {
+            padding-bottom: 8px;
+        }
+    }
+}
+
+.pageNav__popupLink {
+    display: block;
+    padding: 5px 10px;
+
+    font: inherit;
+    color: #fff;
+    text-decoration: none;
+
+    transition: .3s;
+
+    &:hover {
+        opacity: .6;
+    }
 }
