@@ -5,3 +5,12 @@ html, body {
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+.page {
+    width: 100%;
+}
+
+.page__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}

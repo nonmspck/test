@@ -1,0 +1,117 @@
+.scrollSlider {
+    position: relative;
+
+    font: 900 50px/60px "Geometria";
+    color: #fff;
+    text-align: center;
+    
+    background: #999;
+
+    &::after {
+        content: "";
+
+        display: block;
+        width: 30px;
+        height: 43px;
+
+        position: absolute;
+        left: 50%;
+        bottom: 70px;
+        transform: translateX(-50%);
+
+        background: url("%=static=%minified-svg/icon-scroll.svg");
+
+        @media (max-width: 719px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 719px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.scrollSlider__list {
+    margin: 0;
+    padding: 0;
+}
+
+.scrollSlider__slide {
+    padding: 300px 122.5px 235px;
+
+    @media (max-width: 1199px) {
+        padding-top: 240px;
+    }
+
+    @media (max-width: 919px) {
+        padding: 200px 100px 230px;
+    }
+
+    @media (max-width: 719px) {
+        padding: 150px 40px;
+    }
+
+    @media (max-width: 479px) {
+        padding: 120px 25px;
+    }
+}
+
+.scrollSlider__dots {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 50%;
+    bottom: 170px;
+    transform: translateX(-50%);
+
+    list-style: none;
+
+    font-size: 0;
+
+    button {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        padding: 0;
+        border: none;
+
+        border-radius: 50%;
+        background: #fff;
+    }
+
+    .slick-active {
+        button {
+            background: #79c042;
+        }
+    }
+
+    li {
+        margin-right: 8px;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 919px) {
+        bottom: 160px;
+    }
+
+    @media (max-width: 719px) {
+        bottom: 80px;
+    }
+
+    @media (max-width: 479px) {
+        bottom: 60px;
+    }
+}
