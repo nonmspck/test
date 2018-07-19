@@ -5,7 +5,15 @@ var btn_showServ = document.querySelector(".pageNav__link-serv"),
     btn_showWork = document.querySelector(".pageNav__link-work"),
     list_work = document.querySelector(".pageNav__popupList-work"),
     btn_showMenu = document.querySelector(".pageNav__item-mob"),
-    list_menu = document.querySelector(".pageNav__list");
+    list_menu = document.querySelector(".pageNav__list"),
+    header_elem = document.querySelector(".pageHeader"),
+    page_elem = document.querySelector(".page__wrapper");
+
+page_elem.style.paddingTop = getComputedStyle(header_elem).height;
+
+window.addEventListener("resize", function() {
+    page_elem.style.paddingTop = getComputedStyle(header_elem).height;
+});
 
 btn_showMenu.addEventListener("click", function(event) {
     event.preventDefault();

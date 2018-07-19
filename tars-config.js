@@ -248,7 +248,7 @@ module.exports = {
      * and delete unused.
      * @type {Array}
      */
-    useImagesForDisplayWithDpi: [96],
+    useImagesForDisplayWithDpi: [96, 192, 288],
 
     ////////////////////////////////////////////////
     ////////////////////////////////////////////////

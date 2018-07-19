@@ -7,7 +7,10 @@
 
     padding: 50px 150px;
 
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 2; 
 
     background-color: #464646;

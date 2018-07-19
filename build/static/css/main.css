@@ -8814,6 +8814,263 @@ html, body {
   display: none;
 }
 
+.featCli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 58px 150px;
+}
+
+@media (max-width: 979px) {
+  .featCli {
+    padding: 58px 100px;
+  }
+}
+
+@media (max-width: 719px) {
+  .featCli {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 58px 0;
+  }
+}
+
+.featCli__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 1279px) {
+  .featCli__list {
+    width: 450px;
+  }
+}
+
+@media (max-width: 859px) {
+  .featCli__list {
+    width: 300px;
+  }
+}
+
+@media (max-width: 479px) {
+  .featCli__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.featCli__item {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 479px) {
+  .featCli__item {
+    margin-bottom: 30px;
+  }
+  .featCli__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.featCli__link {
+  display: block;
+  font-size: 0;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.featCli__link-verizon {
+  width: 114px;
+  height: 27px;
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
+  background-position: 0px -148px;
+  width: 114px;
+  height: 27px;
+  background-size: 261px, 175px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .featCli__link-verizon {
+    background-image: url(../img/png-sprite/192dpi/sprite.png);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .featCli__link-verizon {
+    background-image: url(../img/png-sprite/288dpi/sprite.png);
+  }
+}
+
+.featCli__link-modelo {
+  width: 118px;
+  height: 49px;
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
+  background-position: -112px -78px;
+  width: 118px;
+  height: 49px;
+  background-size: 261px, 175px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .featCli__link-modelo {
+    background-image: url(../img/png-sprite/192dpi/sprite.png);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .featCli__link-modelo {
+    background-image: url(../img/png-sprite/288dpi/sprite.png);
+  }
+}
+
+.featCli__link-corona {
+  width: 108px;
+  height: 66px;
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
+  background-position: 0px -78px;
+  width: 108px;
+  height: 66px;
+  background-size: 261px, 175px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .featCli__link-corona {
+    background-image: url(../img/png-sprite/192dpi/sprite.png);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .featCli__link-corona {
+    background-image: url(../img/png-sprite/288dpi/sprite.png);
+  }
+}
+
+.featCli__link-newport {
+  width: 134px;
+  height: 53px;
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
+  background-position: -127px 0px;
+  width: 134px;
+  height: 53px;
+  background-size: 261px, 175px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .featCli__link-newport {
+    background-image: url(../img/png-sprite/192dpi/sprite.png);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .featCli__link-newport {
+    background-image: url(../img/png-sprite/288dpi/sprite.png);
+  }
+}
+
+.featCli__link-bio {
+  width: 123px;
+  height: 74px;
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
+  background-position: 0px 0px;
+  width: 123px;
+  height: 74px;
+  background-size: 261px, 175px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .featCli__link-bio {
+    background-image: url(../img/png-sprite/192dpi/sprite.png);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .featCli__link-bio {
+    background-image: url(../img/png-sprite/288dpi/sprite.png);
+  }
+}
+
+.featCli__link-orion {
+  width: 103px;
+  height: 26px;
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
+  background-position: -118px -148px;
+  width: 103px;
+  height: 26px;
+  background-size: 261px, 175px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .featCli__link-orion {
+    background-image: url(../img/png-sprite/192dpi/sprite.png);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .featCli__link-orion {
+    background-image: url(../img/png-sprite/288dpi/sprite.png);
+  }
+}
+
+.featCli__link:hover {
+  opacity: .6;
+}
+
+.featCli__heading {
+  width: 186px;
+  height: 84px;
+  margin: 0;
+  padding: 0;
+  font: 700 40px/42px "Geometria";
+  color: #000;
+}
+
+@media (max-width: 719px) {
+  .featCli__heading {
+    margin-bottom: 40px;
+  }
+}
+
+.featCli__text-black {
+  color: #333;
+}
+
+.featCli__text-grey {
+  color: #bbb;
+}
+
 .pageHeader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8829,7 +9086,10 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 150px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 2;
   background-color: #464646;
   font: 700 16px/18px "Geometria", "Arial", sans-serif;
@@ -9295,4 +9555,8 @@ html, body {
   .scrollSlider__dots {
     bottom: 60px;
   }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }

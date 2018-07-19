@@ -1,0 +1,129 @@
+.featCli {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 150px;
+
+    @media (max-width: 979px) {
+        padding: 58px 100px;
+    }
+
+    @media (max-width: 719px) {
+        flex-direction: column;
+        padding: 58px 0;
+    }
+}
+
+.featCli__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 80%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @media (max-width: 1279px) {
+        width: 450px;
+    }
+
+    @media (max-width: 859px) {
+        width: 300px;
+    }
+
+    @media (max-width: 479px) {
+        flex-direction: column;
+
+        width: 100%;
+    }
+}
+
+.featCli__item {
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 479px) {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.featCli__link {
+    display: block;
+
+    font-size: 0;
+    color: #000;
+    text-decoration: none;
+
+    transition: .3s;
+
+    &-verizon {
+        width: 114px;
+        height: 27px;
+        @include bg($verizon-logo);
+    }
+
+    &-modelo {
+        width: 118px;
+        height: 49px;
+        @include bg($logo-modelo);
+    }
+
+    &-corona {
+        width: 108px;
+        height: 66px;
+        @include bg($corona-logo);
+    }
+
+    &-newport {
+        width: 134px;
+        height: 53px;
+        @include bg($nwwport-group);
+    }
+
+    &-bio {
+        width: 123px;
+        height: 74px;
+        @include bg($bdsi-logo);
+    }
+
+    &-orion {
+        width: 103px;
+        height: 26px;
+        @include bg($orion-logo);
+    }
+
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.featCli__heading {
+    width: 186px;
+    height: 84px;
+    margin: 0;
+    padding: 0;
+
+    font: 700 40px/42px "Geometria";
+    color: #000;
+
+    @media (max-width: 719px) {
+        margin-bottom: 40px;
+    }
+}
+
+.featCli__text {
+    &-black {
+        color: #333;
+    }
+
+    &-grey {
+        color: #bbb;
+    }
+}
