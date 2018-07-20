@@ -8526,6 +8526,29 @@ button.swiper-pagination-bullet {
   font-style: normal;
 }
 
+.btn {
+  display: inline-block;
+  padding: 18px 18px 16px;
+  border: none;
+  background: #79c042;
+  border-radius: 4px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
 html, body {
   height: 100%;
 }
@@ -8812,6 +8835,158 @@ html, body {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font: 400 18px/34px "Geometria";
+  background: rgba(209, 209, 212, 0.1);
+}
+
+@media (max-width: 719px) {
+  .descr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.descr__we {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 220px 0 180px 150px;
+}
+
+@media (max-width: 1279px) {
+  .descr__we {
+    padding-top: 180px;
+    padding-bottom: 130px;
+  }
+}
+
+@media (max-width: 979px) {
+  .descr__we {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 879px) {
+  .descr__we {
+    padding-left: 55px;
+  }
+}
+
+@media (max-width: 719px) {
+  .descr__we {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    padding: 120px 50px;
+  }
+}
+
+.descr__headingText {
+  font: 700 60px/1 "Geometria";
+}
+
+.descr__headingText-black {
+  color: #333333;
+}
+
+.descr__headingText-grey {
+  color: #d1d1d4;
+}
+
+.descr__text {
+  width: 450px;
+  margin: 35px 0;
+  padding: 0;
+  color: #9d9fa2;
+  text-align: left;
+}
+
+@media (max-width: 1279px) {
+  .descr__text {
+    width: 300px;
+  }
+}
+
+@media (max-width: 719px) {
+  .descr__text {
+    width: 80%;
+  }
+}
+
+.descr__lead {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 375px 0 210px 110px;
+  background: url("../img/assets/desc/img-weare.png") center no-repeat;
+  background-size: 720px 768px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .descr__lead {
+    background: url("../img/assets/desc/img-weare@2x.png") center no-repeat;
+    background-size: 720px 768px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .descr__lead {
+    background: url("../img/assets/desc/img-weare@3x.png") center no-repeat;
+    background-size: 720px 768px;
+  }
+}
+
+@media (max-width: 979px) {
+  .descr__lead {
+    padding-left: 75px;
+  }
+}
+
+@media (max-width: 879px) {
+  .descr__lead {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 719px) {
+  .descr__lead {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    padding: 180px 50px;
+  }
+}
+
+.descr__leadText {
+  display: block;
+  width: 380px;
+  font: 700 60px/60px "Geometria";
+  color: #fff;
+}
+
+@media (max-width: 1279px) {
+  .descr__leadText {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 719px) {
+  .descr__leadText {
+    width: 80%;
+  }
+}
+
+@media (max-width: 374px) {
+  .descr__leadText {
+    font-size: 40px;
+  }
 }
 
 .featCli {
