@@ -14,3 +14,20 @@ html, body {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.heading {
+    font: 700 60px/1 "Geometria";
+    text-align: center;
+
+    &-black {
+        color: #333333;
+    }
+
+    &-grey {
+        color: #d1d1d4;
+    }
+
+    @media (max-width: 719px) {
+        font-size: 40px;
+    }
+}

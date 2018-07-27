@@ -1,0 +1,227 @@
+.diff {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 96px 0 125px;
+    
+    font: 18px/1.5 "Geometria";
+
+    @media (max-width: 1023px) {
+        padding: 80px 0 0;
+    }
+}
+
+.diff__heading {
+    width: 650px;
+    margin: 0;
+
+    text-align: center;
+
+    @media (max-width: 719px) {
+        width: 320px;
+    }
+}
+
+.diff__text {
+    width: 650px;
+    margin: 30px 0 55px;
+
+    text-align: center;
+    color: #9d9fa2;
+
+    @media (max-width: 719px) {
+        width: 80%;
+    }
+}
+
+.diff__list {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.diff__item {
+    flex: 1 0 auto;
+    width: 33.3%;
+    
+    &:first-child,
+    &:last-child {
+        padding: 100px 110px 129px 80px;
+
+        @media (max-width: 1279px) {
+            padding: 80px 100px 109px 40px;
+        }
+    }
+
+    &:first-child {
+        background: #79c042 url("%=static=%assets/diff/1.png") no-repeat;
+        background-size: 167px 364px;
+        background-position: 75% 50%;
+
+        @media (max-width: 1023px) {
+            background-position: 90% 10%;
+        }
+
+        @media (max-width: 479px) {
+            background-position: 75% 50%;
+        }
+    
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: #79c042 url("%=static=%assets/diff/1@2x.png") no-repeat;
+            background-size: 167px 364px;
+            background-position: 75% 50%;
+
+            @media (max-width: 1023px) {
+                background-position: 90% 10%;
+            }
+
+            @media (max-width: 479px) {
+                background-position: 75% 50%;
+            }
+        }
+    
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: #79c042 url("%=static=%assets/diff/1@3x.png") no-repeat;
+            background-size: 167px 364px;
+            background-position: 75% 50%;
+
+            @media (max-width: 1023px) {
+                background-position: 90% 10%;
+            }
+
+            @media (max-width: 479px) {
+                background-position: 75% 50%;
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        padding: 119px 70px 149px 75px;
+        background: #6e298d url("%=static=%assets/diff/2.png") no-repeat;
+        background-size: 265px 372px;
+        background-position: 75% 50%;
+
+        @media (max-width: 1023px) {
+            background-position: 10% 15%;
+        }
+
+        @media (max-width: 479px) {
+            background-position: 75% 50%;
+        }
+    
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: #6e298d url("%=static=%assets/diff/2@2x.png") no-repeat;
+            background-size: 265px 372px;
+            background-position: 75% 50%;
+
+            @media (max-width: 1023px) {
+                background-position: 10% 15%;
+            }
+
+            @media (max-width: 479px) {
+                background-position: 75% 50%;
+            }
+        }
+    
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: #6e298d url("%=static=%assets/diff/2@3x.png") no-repeat;
+            background-size: 265px 372px;
+            background-position: 75% 50%;
+
+            @media (max-width: 1023px) {
+                background-position: 10% 15%;
+            }
+
+            @media (max-width: 479px) {
+                background-position: 75% 50%;
+            }
+        }
+
+        @media (max-width: 1279px) {
+            padding: 99px 50px 129px 50px;
+        }
+    }
+
+    &:last-child {
+        padding-right: 90px;
+        background: #f7941e url("%=static=%assets/diff/3.png") no-repeat;
+        background-size: 265px 372px;
+        background-position: 75% 50%;
+
+        @media (max-width: 1023px) {
+            background-position: 90% 15%;
+        }
+
+        @media (max-width: 479px) {
+            background-position: 75% 50%;
+        }
+    
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: #f7941e url("%=static=%assets/diff/3@2x.png") no-repeat;
+            background-size: 265px 372px;
+            background-position: 75% 50%;
+
+            @media (max-width: 1023px) {
+                background-position: 90% 15%;
+            }
+
+            @media (max-width: 479px) {
+                background-position: 75% 50%;
+            }
+        }
+    
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: #f7941e url("%=static=%assets/diff/3@3x.png") no-repeat;
+            background-size: 265px 372px;
+            background-position: 75% 50%;
+
+            @media (max-width: 1023px) {
+                background-position: 90% 15%;
+            }
+
+            @media (max-width: 479px) {
+                background-position: 75% 50%;
+            }
+        }
+    }
+
+    @media (max-width: 1439px) {
+        flex-shrink: 1;
+    }
+
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+}
+
+.diff__itemHeading {
+    font: 900 24px/1.25 "Geometria";
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 6px;
+
+    @media (max-width: 1279px) {
+        font-size: 20px;
+    }
+}
+
+.diff__itemText {
+    width: 100%;
+    margin: 0;
+    margin-top: 18px;
+
+    color: #ffffff;
+
+
+}
