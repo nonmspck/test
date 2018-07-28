@@ -49,6 +49,7 @@ btn_showWork.addEventListener("click", function (event) {
 });
 "use strict";
 "use strict";
+"use strict";
 
 $(document).ready(function () {
     $(".scrollSlider__list").slick({

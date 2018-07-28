@@ -9926,6 +9926,294 @@ html, body {
   }
 }
 
+.markets {
+  padding: 116px 0 0;
+  -webkit-box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.1);
+  font: 500 18px/1.5 "Geometria";
+  color: #ffffff;
+  text-align: center;
+}
+
+.markets__heading {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.markets__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.markets__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.25%;
+  min-height: 472px;
+  margin-bottom: 2px;
+}
+
+.markets__item:last-child {
+  background-color: #79c042;
+}
+
+.markets__item:nth-child(1) {
+  background: #79c042 url("../img/assets/markets/markets-bg-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(1) {
+    background: #79c042 url("../img/assets/markets/markets-bg-1@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(1) {
+    background: #79c042 url("../img/assets/markets/markets-bg-1@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:nth-child(2) {
+  background: #79c042 url("../img/assets/markets/markets-bg-2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(2) {
+    background: #79c042 url("../img/assets/markets/markets-bg-2@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(2) {
+    background: #79c042 url("../img/assets/markets/markets-bg-2@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:nth-child(3) {
+  background: #79c042 url("../img/assets/markets/markets-bg-3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(3) {
+    background: #79c042 url("../img/assets/markets/markets-bg-3@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(3) {
+    background: #79c042 url("../img/assets/markets/markets-bg-3@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:nth-child(4) {
+  background: #79c042 url("../img/assets/markets/markets-bg-4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(4) {
+    background: #79c042 url("../img/assets/markets/markets-bg-4@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(4) {
+    background: #79c042 url("../img/assets/markets/markets-bg-4@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:nth-child(5) {
+  background: #79c042 url("../img/assets/markets/markets-bg-5.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(5) {
+    background: #79c042 url("../img/assets/markets/markets-bg-5@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(5) {
+    background: #79c042 url("../img/assets/markets/markets-bg-5@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:nth-child(6) {
+  background: #79c042 url("../img/assets/markets/markets-bg-6.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(6) {
+    background: #79c042 url("../img/assets/markets/markets-bg-6@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(6) {
+    background: #79c042 url("../img/assets/markets/markets-bg-6@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:nth-child(7) {
+  background: #79c042 url("../img/assets/markets/markets-bg-7.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(7) {
+    background: #79c042 url("../img/assets/markets/markets-bg-7@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(7) {
+    background: #79c042 url("../img/assets/markets/markets-bg-7@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:nth-child(8) {
+  background: #79c042 url("../img/assets/markets/markets-bg-8.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+  .markets__item:nth-child(8) {
+    background: #79c042 url("../img/assets/markets/markets-bg-8@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+  .markets__item:nth-child(8) {
+    background: #79c042 url("../img/assets/markets/markets-bg-8@3x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.markets__item:hover .markets__text {
+  color: rgba(255, 255, 255, 0);
+}
+
+.markets__item:hover .markets__text .markets__link {
+  display: block;
+}
+
+@media (max-width: 1279px) {
+  .markets__item {
+    width: 49.9%;
+  }
+  .markets__item:last-child {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 719px) {
+  .markets__item {
+    width: 100%;
+    min-height: 350px;
+  }
+}
+
+.markets__lead {
+  max-width: 400px;
+  margin-bottom: 25px;
+  font: 900 32px/1.25 "Geometria";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 479px) {
+  .markets__lead {
+    font-size: 25px;
+  }
+}
+
+.markets__text {
+  margin: 0;
+  max-width: 290px;
+  position: relative;
+  cursor: default;
+}
+
+.markets__text::-moz-selection {
+  background-color: transparent;
+}
+
+.markets__text::selection {
+  background-color: transparent;
+}
+
+.markets__link {
+  display: none;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0;
+  background: url("../img/minified-svg/arrow-right.svg");
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.markets__link:hover {
+  opacity: .5;
+}
+
+.markets__btn {
+  border: 2px solid #ffffff;
+  background: transparent;
+}
+
+.markets__btn:hover {
+  background-color: #ffffff;
+  color: #79c042;
+}
+
 .scrollSlider {
   position: relative;
   font: 900 50px/60px "Geometria";
