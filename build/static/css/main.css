@@ -10347,3 +10347,137 @@ html, body {
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
+
+.solutions {
+  padding: 90px 150px 122px;
+  font: 18px/1.5 "Geometria";
+  text-align: center;
+}
+
+@media (max-width: 1279px) {
+  .solutions {
+    padding: 90px 120px 100px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .solutions {
+    padding: 90px 100px 100px;
+  }
+}
+
+@media (max-width: 719px) {
+  .solutions {
+    padding: 90px 0 0;
+  }
+}
+
+.solutions__heading {
+  margin: 0 0 54px;
+}
+
+.solutions__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.solutions__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 31.5%;
+  min-height: 400px;
+  margin: 0 0 32.5px;
+  padding: 25px 37px 0;
+  border: 1px solid #eeeeee;
+  background: #fafafa;
+  border-radius: 4px;
+  list-style: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.solutions__item:hover {
+  padding-top: 10px;
+  background: #27aae1;
+}
+
+.solutions__item:hover .solutions__svgItem {
+  fill: #ffffff;
+}
+
+.solutions__item:hover .solutions__link {
+  display: block;
+}
+
+.solutions__item:hover .solutions__lead,
+.solutions__item:hover .solutions__text {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .solutions__item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 719px) {
+  .solutions__item {
+    width: 100%;
+    min-height: 350px;
+    margin-bottom: 2px;
+    border-radius: 0;
+    padding-top: 0;
+  }
+  .solutions__item:hover {
+    padding-top: 0;
+  }
+  .solutions__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.solutions__lead {
+  display: block;
+  margin: 28px 0 12px;
+  font: 900 20px/1.25 "Geometria";
+  color: #333333;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.solutions__text {
+  margin: 0;
+  color: #9d9fa2;
+}
+
+.solutions__link {
+  display: none;
+  margin-top: 28px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+
+.solutions__link:hover {
+  background: #ffffff;
+  color: #27aae1;
+}
