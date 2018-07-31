@@ -52,6 +52,25 @@ btn_showWork.addEventListener("click", function (event) {
 "use strict";
 
 $(document).ready(function () {
+    $(".revsSlider__list").slick({
+        infinite: true,
+        dots: true,
+        dotsClass: "revsSlider__dots",
+        arrows: true,
+        slidesToScroll: 1,
+        slidesToShow: 1
+    }).on("wheel", function (event) {
+        event.preventDefault();
+        if (event.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+    });
+});
+"use strict";
+
+$(document).ready(function () {
     $(".scrollSlider__list").slick({
         infinite: true,
         dots: true,
@@ -69,3 +88,26 @@ $(document).ready(function () {
     });
 });
 "use strict";
+"use strict";
+
+$(document).ready(function () {
+    $(".slider").slick({
+        infinite: true,
+        slidesToScroll: 1,
+        arrows: false,
+        variableWidth: true
+    }).on("wheel", function (event) {
+        event.preventDefault();
+        if (event.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+    }).on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+        if (slick.slideCount > 2 + nextSlide + $(this).slick("slickGetOption", "slidesToShow")) {
+            $(this).removeClass("slider-last");
+        } else {
+            $(this).addClass("slider-last");
+        }
+    });
+});

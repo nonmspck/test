@@ -10214,6 +10214,210 @@ html, body {
   color: #79c042;
 }
 
+.revsSlider {
+  padding: 90px 166px 140px;
+  background: #79c042;
+  font: 22px/35px "Geometria";
+}
+
+@media (max-width: 1279px) {
+  .revsSlider {
+    padding: 90px 0;
+  }
+}
+
+@media (max-width: 719px) {
+  .revsSlider {
+    padding: 70px 0 50px;
+  }
+}
+
+.revsSlider__heading {
+  margin: 0 0 90px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 719px) {
+  .revsSlider__heading {
+    margin: 0 0 40px;
+  }
+}
+
+.revsSlider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 145px 95px;
+}
+
+@media (max-width: 1023px) {
+  .revsSlider__slide {
+    padding: 0 100px 95px;
+  }
+}
+
+@media (max-width: 719px) {
+  .revsSlider__slide {
+    padding: 0 30px 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .revsSlider__slide {
+    padding: 0 30px 50px;
+  }
+}
+
+.revsSlider__imgWrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.revsSlider__imgWrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 719px) {
+  .revsSlider__imgWrap {
+    margin-bottom: 20px;
+  }
+}
+
+.revsSlider__textWrap {
+  margin-left: 45px;
+}
+
+@media (max-width: 719px) {
+  .revsSlider__textWrap {
+    margin-left: 0;
+  }
+}
+
+.revsSlider__lead {
+  font: 700 18px/35px "Geometria";
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.revsSlider__text {
+  margin: 10px 0 0;
+  font: 400 22px/35px "Geometria";
+  text-align: left;
+  color: #fff;
+}
+
+.revsSlider__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+  font-size: 0;
+}
+
+.revsSlider__dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.revsSlider__dots .slick-active button {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.revsSlider__dots li {
+  margin-right: 10px;
+}
+
+.revsSlider__dots li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1023px) {
+  .revsSlider__dots {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .revsSlider__dots {
+    bottom: 0;
+  }
+}
+
+.slick-arrow {
+  width: 60px;
+  height: 60px;
+  top: 70px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slick-arrow:hover {
+  opacity: .5;
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+.slick-arrow::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/minified-svg/arrow-up.svg") no-repeat;
+}
+
+@media (max-width: 1279px) {
+  .slick-arrow {
+    display: none;
+  }
+}
+
+.slick-next {
+  right: -60px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.slick-prev {
+  left: -60px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .scrollSlider {
   position: relative;
   font: 900 50px/60px "Geometria";
@@ -10411,8 +10615,8 @@ html, body {
   background: #fafafa;
   border-radius: 4px;
   list-style: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
 .solutions__item:hover {
@@ -10480,4 +10684,327 @@ html, body {
 .solutions__link:hover {
   background: #ffffff;
   color: #27aae1;
+}
+
+.gal {
+  padding: 85px 0 120px;
+  position: relative;
+  background-color: #d1d1d4;
+  font: bold 18px "Geometria";
+  color: #fff;
+}
+
+@media (max-width: 639px) {
+  .gal {
+    padding: 40px 0 60px;
+  }
+}
+
+.gal__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+  padding: 0 150px 0;
+}
+
+@media (max-width: 949px) and (min-width: 640px) {
+  .gal__title {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 639px) {
+  .gal__title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 369px) {
+  .gal__title {
+    padding: 0 10px;
+  }
+}
+
+.gal__btn {
+  border: 2px solid #ffffff;
+  background: transparent;
+}
+
+.gal__btn:hover {
+  background: #ffffff;
+  color: #d1d1d4;
+}
+
+@media (max-width: 639px) {
+  .gal__btn {
+    padding: 14px 16px 12px;
+  }
+}
+
+.gal__lead {
+  font-size: 30px;
+  line-height: 0.9;
+}
+
+@media (min-width: 640px) {
+  .gal__lead {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 950px) {
+  .gal__lead {
+    font-size: 60px;
+  }
+}
+
+.gal__icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/minified-svg/pointer.svg");
+}
+
+@media (max-width: 639px) {
+  .gal__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.gal__caption {
+  position: absolute;
+  left: -50px;
+  bottom: 250px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.gal__caption-grey {
+  color: #9d9fa2;
+}
+
+@media (max-width: 639px) {
+  .gal__caption {
+    display: block;
+    padding-top: 20px;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 447px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 150px;
+}
+
+.slider::after {
+  content: "";
+  width: 230px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(#000000), to(rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(right, #000000, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+@media (max-width: 639px) {
+  .slider::after {
+    display: none;
+  }
+}
+
+.slider-last::after {
+  opacity: 0;
+}
+
+@media (max-width: 639px) {
+  .slider {
+    width: 490px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 489px) {
+  .slider {
+    width: 100%;
+  }
+}
+
+.slider__item {
+  width: 490px;
+  height: 447px;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  list-style: none;
+}
+
+@media (max-width: 489px) {
+  .slider__item {
+    width: 100vw;
+  }
+}
+
+.slider__item-one {
+  background: #da3832 url("../img/assets/workSlider/verizon-logo.png") center center no-repeat;
+  background-size: 292px 104px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+  .slider__item-one {
+    background-image: url("../img/assets/workSlider/verizon-logo@2x.png");
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+  .slider__item-one {
+    background-image: url("../img/assets/workSlider/verizon-logo@3x.png");
+  }
+}
+
+.slider__item-two {
+  background: #000 url("../img/assets/workSlider/gal-img.jpg") center top;
+  background-size: 490px 447px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+  .slider__item-two {
+    background-image: url("../img/assets/workSlider/gal-img@2x.jpg");
+    background-size: 490px 447px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+  .slider__item-two {
+    background-image: url("../img/assets/workSlider/gal-img@3x.jpg");
+    background-size: 490px 447px;
+  }
+}
+
+.slider__item-three {
+  background: #47ace9 url("../img/assets/workSlider/verizon-logo.png") center center no-repeat;
+  background-size: 292px 104px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+  .slider__item-three {
+    background-image: url("../img/assets/workSlider/verizon-logo@2x.png");
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+  .slider__item-three {
+    background-image: url("../img/assets/workSlider/verizon-logo@3x.png");
+  }
+}
+
+.slider__item-four {
+  background: #ae47e9 url("../img/assets/workSlider/verizon-logo.png") center center no-repeat;
+  background-size: 292px 104px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+  .slider__item-four {
+    background-image: url("../img/assets/workSlider/verizon-logo@2x.png");
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+  .slider__item-four {
+    background-image: url("../img/assets/workSlider/verizon-logo@3x.png");
+  }
+}
+
+.slide {
+  width: 100%;
+  height: 447px;
+  position: relative;
+  font: 500 18px/1.2 "Geometria";
+  color: #fff;
+  text-align: center;
+}
+
+.slide:hover .slide__hover {
+  opacity: 1;
+}
+
+.slide__hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slide__lead {
+  margin-top: 107px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.85;
+}
+
+@media (max-width: 422px) {
+  .slide__lead {
+    font-size: 35px;
+    line-height: 1;
+  }
+}
+
+.slide__text {
+  width: 250px;
+  margin-top: 25px;
+}
+
+.slide__btn {
+  margin-top: 34px;
+  border: 2px solid #ffffff;
+  background: transparent;
+}
+
+.slide__btn:hover {
+  background: #ffffff;
+  color: #000000;
 }
