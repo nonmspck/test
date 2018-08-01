@@ -1,0 +1,205 @@
+.featGal {
+    padding: 90px 10.4% 105px;
+
+    position: relative;
+
+    font: 700 50px/52px "Geometria";
+    text-align: left;
+    color: #ffffff;
+
+    background: #d1d1d4;
+
+    @media (max-width: 479px) {
+        padding: 90px 0 0;
+    }
+}
+
+.featGal__heading {
+    margin: 0;
+
+    position: absolute;
+    bottom: 187px;
+    left: -10px;
+    transform: rotate(-90deg);
+
+    font-size: 50px;
+
+    @media (max-width: 1279px) {
+        position: static;
+
+        margin-bottom: 40px;
+
+        text-align: center;
+
+        transform: none;
+    }
+}
+
+.featGal__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-content: stretch;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.featGal__link {
+    display: block;
+    min-height: 325px;
+
+    flex: 1 1 auto;
+
+    position: relative;
+
+    &:hover {
+        &::before {
+            content: "";
+
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+
+            background: rgba(0, 0, 0, .1);
+        }
+
+        &::after {
+            content: "";
+
+            display: block;
+            width: 70px;
+            height: 70px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background: url("%=static=%minified-svg/lnr-magnifier.svg") no-repeat center center;
+        }
+    }
+
+    &-1 {
+        width: 355px;
+
+        background: url("%=static=%assets/featGal/bg-featGal-1.jpg") no-repeat center;
+        background-size: cover;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: url("%=static=%assets/featGal/bg-featGal-1@2x.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: url("%=static=%assets/featGal/bg-featGal-1@3x.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &-2 {
+        width: 428px;
+
+        background: url("%=static=%assets/featGal/bg-featGal-2.jpg") no-repeat center;
+        background-size: cover;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: url("%=static=%assets/featGal/bg-featGal-2@2x.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: url("%=static=%assets/featGal/bg-featGal-2@3x.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &-3 {
+        width: 357px;
+
+        background: url("%=static=%assets/featGal/bg-featGal-3.jpg") no-repeat center;
+        background-size: cover;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: url("%=static=%assets/featGal/bg-featGal-3@2x.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: url("%=static=%assets/featGal/bg-featGal-3@3x.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &-4 {
+        width: 270px;
+
+        background: url("%=static=%assets/featGal/bg-featGal-4.jpg") no-repeat center;
+        background-size: cover;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: url("%=static=%assets/featGal/bg-featGal-4@2x.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: url("%=static=%assets/featGal/bg-featGal-4@3x.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &-5 {
+        width: 249px;
+
+        background: url("%=static=%assets/featGal/bg-featGal-5.jpg") no-repeat center;
+        background-size: cover;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: url("%=static=%assets/featGal/bg-featGal-5@2x.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: url("%=static=%assets/featGal/bg-featGal-5@3x.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &-6 {
+        width: 356px;
+
+        background: url("%=static=%assets/featGal/bg-featGal-6.jpg") no-repeat center;
+        background-size: cover;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: url("%=static=%assets/featGal/bg-featGal-6@2x.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: url("%=static=%assets/featGal/bg-featGal-6@3x.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &-7 {
+        width: 241px;
+
+        background: url("%=static=%assets/featGal/bg-featGal-7.jpg") no-repeat center;
+        background-size: cover;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+            background: url("%=static=%assets/featGal/bg-featGal-7@2x.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+            background: url("%=static=%assets/featGal/bg-featGal-7@3x.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+}
