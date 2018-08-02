@@ -110,6 +110,8 @@
     }
 
     @media (max-width: 719px) {
+        display: none;
+
         order: 3;
 
         width: 100%;
@@ -119,6 +121,10 @@
 
         background-color: transparent;
         border-radius: 0;
+
+        &-show {
+            display: block;
+        }
     }
 }
 

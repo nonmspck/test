@@ -1,0 +1,125 @@
+.facts {
+    padding: 60px 6.25% 95px;
+
+    text-align: center;
+
+    font: 500 16px/1.5 "Geometria";
+    color: #9d9fa2;
+
+    @media (max-width: 1439px) { 
+        padding: 60px 4% 95px;
+    }
+
+    @media (max-width: 1023px) {
+        padding: 60px 2%;
+    }
+
+    @media (max-width: 719px) {
+        padding: 60px 0 0;
+    }
+}
+
+.facts__heading {
+    margin: 0 0 44.5px;
+
+    @media (max-width: 719px) {
+        margin: 0 0 20px;
+    }
+}
+
+.facts__list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @media (max-width: 719px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.facts__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 33.3%;
+    padding: 70px 30px 20px;
+
+    flex: 1 1 auto;
+
+    position: relative;
+
+    &::after {
+        content: "";
+
+        display: block;
+        width: 4px;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        right: -2px;
+        transform: rotate(30deg);
+
+        background: #d8d8d8;
+        opacity: .2;
+
+        @media (max-width: 1279px) {
+            transform: rotate(20deg);
+        }
+
+        @media (max-width: 1023px) {
+            transform: rotate(10deg);
+        }
+
+        @media (max-width: 719px) {
+            width: 100%;
+            height: 4px;
+
+            top: auto;
+            right: 0;
+            bottom: 0;
+
+            transform: none;
+        }
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        padding: 40px 20px;
+    }
+
+    @media (max-width: 719px) {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+.facts__lead {
+    font: 700 80px/1 "Geometria";
+    text-transform: uppercase;
+    color: #27aae1;
+
+    @media (max-width: 1279px) {
+        font-size: 60px;
+    }
+}
+
+.facts__text {
+    margin: 25px 0 0;
+    max-width: 325px;
+
+    @media (max-width: 1439px) {
+        max-width: 280px;
+    }
+}
