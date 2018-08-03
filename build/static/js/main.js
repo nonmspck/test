@@ -532,6 +532,7 @@
 "use strict";
 "use strict";
 "use strict";
+"use strict";
 
 var btn_showServ = document.querySelector(".pageNav__link-serv"),
     list_serv = document.querySelector(".pageNav__popupList-serv"),
