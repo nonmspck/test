@@ -1,0 +1,109 @@
+.form {
+    font: 500 16px/1.25 "Geometria";
+}
+
+.form__imgWrap {
+    width: 100%;
+    height: 641px;
+
+    background: #79c042 url("%=static=%assets/form/form-img.jpg") no-repeat center bottom;
+    background-size: cover;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+        background: #79c042 url("%=static=%assets/form/form-img@2x.jpg") no-repeat center bottom;
+        background-size: cover;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+        background: #79c042 url("%=static=%assets/form/form-img@3x.jpg") no-repeat center bottom;
+        background-size: cover;
+    }
+
+    @media (max-width: 1023px) {
+        height: 400px;
+    }
+}
+
+.form__contentWrap {
+    padding: 0 10.4% 70px;
+
+    @media (max-width: 719px) {
+        padding: 0 0;
+    }
+}
+
+.form__content {
+    margin: -70px 0 0;
+
+    box-shadow: 0 0 35px 0 rgba(23, 32, 49, 0.05);
+
+    @media (max-width: 719px) {
+        margin: 0;
+
+        box-shadow: none;
+    }
+}
+
+.form__heading {
+    display: block;
+    height: 70px;
+    padding: .5em 0;
+
+    background: #79c042;
+
+    font: 700 32px/42px "Geometria";
+    text-align: center;
+    color: #ffffff;
+
+    @media (max-width: 719px) {
+        height: auto;
+        padding: .5em;
+    }
+}
+
+.form__form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 60px 29% 80px;
+
+    @media (max-width: 1023px) {
+        padding: 60px 20% 80px;
+    }
+
+    @media (max-width: 719px) {
+        padding: 40px 10%;
+    }
+}
+
+.form__input {
+    margin: 0 0 10px;
+    padding: .9em;
+    border: 1px solid #d1d1d4;
+
+    border-radius: 4px;
+    background: #ffffff;
+
+    font: 500 16px/1 "Geometria";
+    color: #666666;
+
+    &::-moz-placeholder {
+        font: 500 15px/1 "Geometria";
+        color: #d1d1d4;
+    }
+
+    &:hover {
+        border: 1px solid rgba(121, 192, 66, .5);
+    }
+
+    &:focus {
+        border: 1px solid #79c042;
+    }
+
+    &-area {
+        height: 200px;
+
+        resize: none;
+    }
+}
