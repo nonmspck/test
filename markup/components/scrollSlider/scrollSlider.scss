@@ -45,6 +45,35 @@
 .scrollSlider__slide {
     padding: 300px 122.5px 235px;
 
+    background: url("%=static=%assets/scrollSlider/slide-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        z-index: 0;
+
+        background: rgba(0, 0, 0, .4);
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
+        background: url("%=static=%assets/scrollSlider/slide-bg@2x.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
+        background: url("%=static=%assets/scrollSlider/slide-bg@3x.jpg") no-repeat center;
+        background-size: cover;
+    }
+
     @media (max-width: 1199px) {
         padding-top: 240px;
     }
@@ -55,11 +84,18 @@
 
     @media (max-width: 719px) {
         padding: 150px 40px;
+
+        background-position: center left;
     }
 
     @media (max-width: 479px) {
         padding: 120px 25px;
     }
+}
+
+.scrollSlider__lead {
+    position: relative;
+    z-index: 1;
 }
 
 .scrollSlider__dots {
